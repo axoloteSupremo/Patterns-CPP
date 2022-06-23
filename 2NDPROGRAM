@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int c=10; 
+    for(int row = c; row>=1; row--)
+    {
+        for (int space=1; space <c-row; space++)
+        {
+            cout << " ";
+        }
+        
+        for(int col = 1; col <= row*2-1; col++)
+        {
+            cout << "^";
+        }
+        cout << endl; 
+        
+    }
+    
+    return 0;
+}
