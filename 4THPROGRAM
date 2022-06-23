@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int c=10; 
+    for(int row = 1; row<=c; row++)
+    {
+        for(int space =1; space<=c-row; space ++)
+            cout << " "; 
+        for(int col=1; col <=row*2-1; col++)
+        {
+            cout << "*";
+        }
+        cout << endl;
+    }
+    for (int row=c; row>=1; row--)
+    {
+        for(int space= 1; space <= c-row+1;space ++)
+            cout << " ";
+        for (int col=1; col<=row*2-3; col++)
+        {
+            cout << "*";
+        }
+        cout << endl; 
+    }
+    
+    return 0;
+}
